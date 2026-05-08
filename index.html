@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Task - Mi Gestor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <h1>Gestor de Tareas</h1>
+        
+        <form id="formulario-tareas">
+            <div class="campo">
+                <input type="text" id="titulo" placeholder="Título de la tarea">
+                <span id="error-titulo" class="mensaje-error"></span>
+            </div>
+
+            <div class="campo">
+                <textarea id="descripcion" placeholder="Descripción de la tarea"></textarea>
+                <span id="error-descripcion" class="mensaje-error"></span>
+            </div>
+
+            <button type="submit" id="btn-guardar">Agregar Tarea</button>
+            <button type="button" id="btn-cancelar" style="display: none;">Cancelar</button>
+        </form>
+
+        <ul id="lista-tareas">
+            <!-- Las tareas aparecerán aquí -->
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
